@@ -4,24 +4,26 @@ def login_page():
     return rx.center(
         rx.box(
             rx.vstack(
-                rx.heading("Iniciar Sesión", size="8", color="blue"),
-                rx.input(placeholder="Usuario o correo electronico",size="3",width="75%"),
-                rx.input(placeholder="Contraseña", type_="password",size="3",width="75%"),
-                rx.button("Inicia sesion", color_scheme="blue",size="3", width="75%"),
-                rx.text("¿Olvidaste tu contraseña?", color="blue", size="1", cursor="pointer"),
-                rx.link("¿No tienes una cuenta? Regístrate aquí", href="/register_page"),
-                #spacing="4",
+                rx.heading("FutbolitoOnline", size="9", color="orange",style={"font-family":"roboto"}),
+                rx.heading("Iniciar Sesión", size="8", color="orange",style={"font-family":"roboto"}),
+                rx.input(placeholder="Nombre de usuario o correo electronico",size="3",width="150%"),
+                rx.input(placeholder="Contraseña", type_="password",size="3",width="150%"),
+                rx.button("Inicia sesion", color_scheme="grass",size="3"),
+                rx.text("¿Olvidaste tu contraseña? ", color="red", size="2", cursor="pointer"),
+                rx.link("¿No tienes una cuenta? Regístrate aquí", color="red", href="/register_page"),
+                
                 width="100%",
                 align_items="center",
                 justify_content="center",
             ),
-            width="510px",
-            height="400px",
+            
+            width="460px",
+            height="460px",
             padding="50px",
-            background="white",
-            #border_radius="40px",
-            box_shadow="0px 4px 10px rgba(0, 0, 0, 0.25)",
+            
+            
+            
         ),
-        background="gray.100",
+        background="blue",
         height="100vh",
     )
