@@ -1,6 +1,6 @@
 import reflex as rx
 
-def register_page():
+def pagina_registro():
     return rx.center(
         rx.box(
             rx.vstack(
@@ -14,6 +14,7 @@ def register_page():
                 width="100%",
                 align_items="center",
                 justify_content="center",
+                
             ),
             width="460px",
             height="460px",
