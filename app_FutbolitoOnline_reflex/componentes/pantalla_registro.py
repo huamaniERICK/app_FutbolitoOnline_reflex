@@ -9,7 +9,7 @@ def pagina_registro():
                 rx.input(placeholder="Nombre",size="3", width="150%"),
                 rx.input(placeholder="Correo electrónico", size="3", width="150%", autocomplete="email"),
                 rx.input(placeholder="Contraseña", type_="password", size="3", width="150%"),
-                rx.button("Registrarme", color_scheme="red", size="3"),
+                rx.button("Registrarme", color_scheme="red", size="3", on_click=lambda:rx.redirect("/encabezado")),
                 spacing="3",
                 width="100%",
                 align_items="center",
