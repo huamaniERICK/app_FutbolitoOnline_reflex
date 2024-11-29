@@ -1,7 +1,8 @@
 import reflex as rx
 
-from .pantalla_principal.seccion import seccion
-from .pantalla_principal.encabezado import encabezado
+from .componentes.pantalla_creacion import create_page
+from .pagina_principal.seccion import seccion
+from .pagina_principal.encabezado import encabezado
 from .componentes.pantalla_inicio import pagina_inicio
 from .componentes.pantalla_registro import pagina_registro
 
@@ -39,13 +40,17 @@ def index ()->rx.components:
         background="blue",
         align_items="center",
         justify_content="center",
-           
-    )
+        
+    ),
+
 app = rx.App()
 app.add_page(index, route="/")
 app.add_page(pagina_inicio, route="/login_page")
 app.add_page(pagina_registro, route="/register_page")
-app.add_page(encabezado,route="/encabezado")
+app.add_page(encabezado, route="/encabezado")
 app.add_page(seccion, route="/seccion")
+app.add_page(create_page,route="/create_page")
+
+
 
 

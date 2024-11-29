@@ -7,9 +7,8 @@ def encabezado():
         rx.spacer(),
         rx.button("IDIOMA",color_scheme="ruby"),
         rx.button("CUENTA",color_scheme="ruby",margin_right="70px"),
-        rx.button("MIS TORNEOS",color_scheme="green",margin_right="60px"),
+        rx.button("CREAR TORNEO",color_scheme="green",margin_right="60px",on_click=lambda:rx.redirect("/create_page")),
     
         background="blue",
-        align="center",  
-    
+        align="center",
     ),
