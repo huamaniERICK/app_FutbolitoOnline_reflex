@@ -1,5 +1,6 @@
 import reflex as rx
 
+from .pagina_agregacion.main_ajustes import main_ajustes
 from .componentes.pantalla_creacion import create_page
 from .pagina_principal.main import main
 from .componentes.pantalla_inicio import pagina_inicio
@@ -48,6 +49,7 @@ app.add_page(pagina_inicio, route="/login_page")
 app.add_page(pagina_registro, route="/register_page")
 app.add_page(main, route="/main")
 app.add_page(create_page,route="/create_page")
+app.add_page(main_ajustes, route="/main_ajustes")
 
 
 
