@@ -1,7 +1,11 @@
-import reflex as rx 
+import reflex as rx
+
+from .encabezado_ajustes import encabezado_ajustes
+from .seccion2 import seccion2
 
 def main_ajustes():
     return rx.box(
-        rx.text("bienvenido estas en la pantalla de agregar equipos")
+        encabezado_ajustes(),
+        seccion2(),
 
     )

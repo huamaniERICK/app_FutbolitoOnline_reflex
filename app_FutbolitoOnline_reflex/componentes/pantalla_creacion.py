@@ -14,7 +14,7 @@ def create_page():
                 rx.input(placeholder="HH:MM:SS",size="3",width="95",margin_top="-1em"),
                 rx.hstack(
                     rx.button("CANCELAR",color_scheme="ruby",on_click=lambda:rx.redirect("/main")),
-                    rx.button("SIGUIENTE",color_scheme="grass",margin_right="70px",on_click=lambda:rx.redirect("/main_ajustes")),
+                    rx.button("ACEPTAR",color_scheme="grass",margin_right="70px",on_click=lambda:rx.redirect("/main_ajustes")),
                     margin_top="9em",
                     margin_right="-260px",
                 ),
@@ -24,13 +24,16 @@ def create_page():
                 align_items="center",
                 justify_content="center",
             ),
+            background_color="white",
+            border_radius="20px",
             width="450px",
             height="600px",
             padding="50px",
-            background="white",
-            box_shadow="0px 4px 10px rgba(0, 0, 0, 0.25)",
+            box_shadow="0px 3px 10px rgba(0, 0, 0, 0.50)",
+            border_color="red",
+            
         ),
-        background="blue",
+        # background="blue",
         height="100vh",
         
         
