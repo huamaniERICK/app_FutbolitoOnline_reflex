@@ -2,52 +2,60 @@ import reflex as rx
 
 def seccion2():
     return rx.box(
-        rx.hstack(
-            rx.box(
-                rx.tabs.root(
-
-                    rx.tabs.list(
-                        rx.tabs.trigger("Generalidades", value="Generalidades"),
-                        rx.tabs.trigger("Participacion", value="Participacion"),
-                        rx.tabs.trigger("Clasificacion", value="Clasificacion"),
-                        rx.tabs.trigger("Resultados", value="Resultados"),
-                        
-                    ),
-                    rx.tabs.content(
-                        rx.center(
-                            rx.text("NOMBRE DEL TORNEO"),
-                        ),
-                        value="Generalidades",
-                    ),
-                    rx.tabs.content(
-                        rx.box(
-                            rx.hstack(
-
-                            ),
-                            background_color="white",
-                            border_radius="20px",
-                            width="350px",
-                            height="100px",
-                            padding="300px",
-                            box_shadow="0px 3px 10px rgba(0, 0, 0, 0.50)",
-                        ),
-                        value="Participacion",
-                    ),
-                    default_value="tab1",
-                    orientation="vertical",
-                )
-                    #     on_change=SegmentedState.setvar("control"),
-                    #     value=SegmentedState.control,     
-                    # ),
-                    # rx.card(
-                    #     rx.text(SegmentedState.control,align="left"),
-                    #     rx.text(SegmentedState.control,align="left"),
-                    #     rx.text(SegmentedState.control,align="left"),
-                    #     width="100%",
-                    # )
+        rx.box(
+            rx.vstack(
+                rx.link(
+                    "Generalidades",
+                    color="black",
+                    size="5",
+                    margin_top="3em",
                     
-            )
-        )      
-    )       
-    
-    
+                ),
+                rx.link(
+                    "Participantes",
+                    color="black",
+                    size="5",
+                    
+                ),
+                rx.link(
+                    "Clasificacion",
+                    color="black",
+                    size="5",
+                    
+                ),
+                rx.link(
+                    "Resultados",
+                    color="black",
+                    size="5",
+                    
+                ),
+                
+                align_items="center",
+                justify_content="center",
+                spacing="9",
+                style={"font-family":"quesha"},
+            
+            ),
+            background="#0fc3f0",
+            width="10%",
+            height="89vh",
+            
+        
+        
+        ),
+    rx.box(
+        rx.center(
+            rx.vstack(
+                rx.text("Nombre del torneo",size="5",margin_top="-32em",align="center"),
+                rx.hstack(
+                    rx.input(id="input1",width="450px"),
+                    rx.button("Cancelar", on_click=rx.set_value("input1",""),),
+                ),
+            ),
+            
+        ),
+        
+    ),
+
+    ),
+        
