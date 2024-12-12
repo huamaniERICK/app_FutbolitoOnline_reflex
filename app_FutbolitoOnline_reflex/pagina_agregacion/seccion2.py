@@ -9,6 +9,9 @@ def seccion2():
                     rx.tabs.trigger("Participantes", value="tab2"),
                     rx.tabs.trigger("Clasificacion", value="tab3"),
                     rx.tabs.trigger("Resultados", value="tab4"),
+                    background_color="#79d4e7",
+                    height="89vh",
+                    width="10%",
                 ),
                 rx.tabs.content(
                     rx.box(
